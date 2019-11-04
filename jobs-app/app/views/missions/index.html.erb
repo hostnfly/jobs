@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Missions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @missions.each do |mission| %>
+      <tr>
+        <td>
+          <div>
+            Mission n°<%= mission.id %> of type <%= mission.mission_type %> for <%= mission.date %> for listing <%= mission.listing.id %>
+          </div>
+          <div>
+            Price: <%= mission.price %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Generate missions', generate_mission_path, method: :post %>
