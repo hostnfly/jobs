@@ -1,5 +1,5 @@
 # Guidelines
-1. Clone this repo (do not fork it) 
+1. Fork the repo
 2. Make a new branch
 2. Commit your code as you do it
 3. Once you are done, make a pull request and contact us!
